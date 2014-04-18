@@ -1,0 +1,43 @@
+.left { float: left; }
+
+.right { float: right; }
+
+.relative { position: relative; }
+
+.clearfix { overflow: hidden; *zoom: 1; }
+
+.text-centered { text-align: center; }
+
+.text-right { text-align: right; }
+
+.nowrap { white-space: nowrap; }
+
+.last { margin-right: 0; }
+
+.end { margin-bottom: 0; }
+
+.handle { cursor: move; }
+
+.normal { font-weight: normal; }
+
+.bold { font-weight: bold; }
+
+.italic { font-style: italic; }
+
+.req .required { font-weight: normal; color: #ef6465; }
+
+.text-uppercase { text-transform: uppercase; }
+
+.zero, .unstyled { margin: 0; padding: 0; }
+
+.highlight { background-color: #ffff9e; }
+
+.hidden { display: none !important; visibility: hidden; }
+
+.unstyled { list-style: none; }
+.unstyled li { list-style-image: none; list-style-type: none; margin-left: 0; }
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

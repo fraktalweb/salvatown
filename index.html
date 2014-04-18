@@ -8,34 +8,47 @@
 
 </head>
 <body>
-  <div class="b_head">
-      <div class="b_brand">
-          <h1 class="b_brand__logo"><a class="b-link" href="#">Salvatown</a></h1>
-      </div>
-  </div>
 
 
-  <nav class="b_menu b_menu--top">
-      <li class="b_menu__item"><a href="#">item-1</a></li>
-      <li class="b_menu__item"><a href="#">item-2</a></li>
-      <li class="b_menu__item"><a href="#">item-3</a></li>
-      <li class="b_menu__item">
-          <form class="b_search" action="#">
-              <input class="b_search__input" type="text"/>
-              <button class="b_search__submit"></button>
-          </form>
-      </li>
+<div class="layout">
+    <header class="b_head" role="header">
 
-  </nav>
+        <div class="b_head b_head--top">
+            <div class="container">
+                <div class="b_brand">
+                    <h1 class="b_brand__logo"><a class="b-link" href="#">Salvatown</a></h1>
+                </div>
+                <nav class="b_nav--top" role="second-menu">
+                    <ul class="unstyled b_menu">
+                        <li class="b_menu__item"><a href="#" class="b-link">Subir Evento</a></li>
+                        <li class="b_menu__item"><a href="#" class="b-link">Subir Clasificado</a></li>
+                        <li class="b_menu__item"><a href="#" class="b-link">Anúnciate Gratis</a></li>
+                        <li class="b_menu__item">
+                            <form class="b_search" action="#">
+                                <input class="b_search__input" type="text"/>
+                                <button class="b_search__submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
 
-  <nav class="b_menu">
-      <li class="b_menu__item"><a class="b-link" href="#">Conócenos</a></li>
-      <li class="b_menu__item"><a class="b-link" href="#">Turismo</a></li>
-      <li class="b_menu__item"><a class="b-link" href="#">Eventos</a></li>
-      <li class="b_menu__item"><a class="b-link" href="#">Clasificados</a></li>
-      <li class="b_menu__item"><a class="b-link" href="#">Notas</a></li>
-  </nav>
-
+       <div class="b_head b_head--bottom">
+           <nav class="b_menu__bottom" role="main-menu">
+               <div class="container">
+                   <ul class="unstyled">
+                       <li class="b_menu__item"><a class="b-link" href="#">Conócenos</a></li>
+                       <li class="b_menu__item"><a class="b-link" href="#">Turismo</a></li>
+                       <li class="b_menu__item"><a class="b-link" href="#">Eventos</a></li>
+                       <li class="b_menu__item"><a class="b-link" href="#">Clasificados</a></li>
+                       <li class="b_menu__item"><a class="b-link" href="#">Notas</a></li>
+                   </ul>
+               </div>
+           </nav>
+       </div>
+    </header>
+</div>
 
 
 </body>

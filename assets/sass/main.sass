@@ -1,4 +1,67 @@
-@import "partials/base"
+
+@import "partials/helpers"
 @import "bourbon/bourbon"
 @import "neat/neat"
+@import "neat/neat-helpers"
+@import "partials/base"
 
+body
+  font-size: 100%
+  font-family: $font__sans
+
+.b-link
+  font-size: 14px
+  font-weight: 400
+  
+.container
+  +outer-container
+
+.b_head
+  +size(100% auto)
+  overflow: hidden
+.b_head--top
+  overflow: visible
+  background: $color__primary-blue
+  border-bottom: 5px solid $color__primary-blue--dark
+.b_brand
+  +span-columns(3)
+  height: 40px
+  +media($mobile)
+    +span-columns(12)
+  .b_brand__logo
+    display: block
+    background: url('../../img/salvatown-logo.png') no-repeat
+    +size(189px 154px)
+    position: absolute
+    margin: 0.25em 0
+    .b-link
+      @extend .b_brand__logo
+      background: transparent
+      +hide-text
+
+.b_nav--top
+  +span-columns(9)
+.b_menu
+  display: table
+  width: 100%
+  text-align: center
+  .b_menu__item
+    display: table-cell
+    vertical-align: middle
+    border-left: 1px solid lighten($color__primary-blue, 10%)
+    &:hover
+      background: $color__primary-blue--dark
+  .b-link
+    display: block
+    line-height: 40px
+    color: #ffffff
+    text-decoration: none
+    padding: 0 1.5em
+    border-left: 1px solid darken($color__primary-blue, 10%)
+
+.b_head--bottom
+  background: $color__primary-red
+  border-bottom: 5px solid $color__primary-red--dark
+.b_menu__bottom
+  +span-columns(9)
+  +shift(3)
